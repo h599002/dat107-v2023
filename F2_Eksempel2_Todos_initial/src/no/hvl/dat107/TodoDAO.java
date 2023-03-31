@@ -11,7 +11,7 @@ public class TodoDAO {
 	
 	private EntityManagerFactory emf 
 			= Persistence.createEntityManagerFactory("todoPersistenceUnit", 
-			Map.of("jakarta.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
+			Map.of("jakarta.persistence.jdbc.password", "DatabaseBarn38!"));
 	
 	/* --------------------------------------------------------------------- */
 
@@ -81,7 +81,7 @@ public class TodoDAO {
 		try {
 			tx.begin();
 			
-			/*???*/
+			em.merge(null); //TODO SJÅ HER
 			
 			tx.commit();
 			

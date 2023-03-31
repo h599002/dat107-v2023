@@ -2,7 +2,7 @@ package no.hvl.dat107;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainEx1F5 {
 
 	private static Scanner scanner = new Scanner(System.in);
 	
